@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2"><h2> Bang Tinh BMI</h2></td>
+    </tr>
+    <tr>
+        <td>Chieu cao :</td>
+        <td><input type="text" id="cao"></td>
+    </tr>
+    <tr>
+        <td>Can nang :</td>
+        <td><input type="text" id="nang"></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="tinhbmi()">Tinh bmi</button>
+        </td>
+    </tr>
+</table>
+<p id="ketqua"></p>
+</body>
+<script>
+    function tinhbmi() {
+        let a = +document.getElementById("cao").value;
+        let b = +document.getElementById("nang").value;
+        let BMI = b / (a ^ 2)
+        if (BMI < 18)
+            document.getElementById("ketqua").innerHTML = ("hoi gay 1 ti'" + 'bmi=' + BMI);
+        else if (BMI < 25.0)
+            document.getElementById("ketqua").innerHTML = ("than hinh hoan toan binh thuong " + 'BMI=' + BMI);
+        else if (BMI < 30.0)
+            document.getElementById("ketqua").innerHTML = ("Mum~ Mim~ " + 'BMI=' + BMI);
+        else
+            document.getElementById("ketqua").innerHTML = ("Dep trai vl " + 'BMI=' + BMI);
+    }
+</script>
+</html>

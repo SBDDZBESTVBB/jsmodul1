@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./anhpuzzel">
+</head>
+<body>
+<table>
+    <tr><div id="anh1" onclick="click1()"></div></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+</table>
+<script>
+    var puzzel1= new Array()
+    puzzel1[1] = '<img src="anhpuzzel/funny-cat1_part1x1.jpg" alt="meo1"/>';
+    puzzel1[2] = '<img src="anhpuzzel/panda_swap_part1x1.jpg" alt="gau1"/>';
+    var a= Math.round(2*Math.random());
+    document.getElementById("anh1").innerHTML=(puzzel1[a]);
+</script>
+</body>
+</html>

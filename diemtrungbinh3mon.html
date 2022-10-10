@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>toán</td>
+        <td><input type="number" id="t"></td>
+    </tr>
+    <tr>
+        <td>lý</td>
+        <td><input type="number" id="l"></td>
+    </tr>
+    <tr>
+        <td>hóa</td>
+        <td><input type="number" id="h"></td>
+    </tr>
+</table>
+<button type="button" onclick="tinhtungbinh()"> diểm trung bình 3 mon</button>
+<script>
+    function tinhtungbinh(){
+        var a = +document.getElementById("t").value;
+        var b = +document.getElementById("l").value;
+        var c = +document.getElementById("h").value;
+        var avgmark
+        avgmark = (a + b + c)/3
+        document.write(avgmark)
+    }
+
+</script>
+</body>
+</html>

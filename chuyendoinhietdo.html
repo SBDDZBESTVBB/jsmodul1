@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<input type="number" id="c"> độ C</input>
+<button type="button" onclick="chuyensangdof()">Chuyển sang độ F</button>
+<p id="ketqua"> kết quả</p>
+<script>
+    function chuyensangdof(){
+        var a = +document.getElementById("c").value;
+        var b
+        b = a*9/5+32 + "Độ F"
+        document.getElementById("ketqua").innerText = b;
+    }
+</script>
+</body>
+</html>
